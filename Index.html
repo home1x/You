@@ -1,1 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTIST // OFFICIAL</title>
+    <!-- Tailwind CSS for clean, rapid minimalist styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+        }
+        /* Custom scrollbar to keep it sleek */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #262626; }
+    </style>
+</head>
+<body class="text-white antialiased selection:bg-white selection:text-black">
 
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-neutral-900">
+        <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-semibold tracking-widest uppercase">ARTIST</a>
+            
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex space-x-8 text-xs tracking-widest uppercase font-medium text-neutral-400">
+                <a href="#albums" class="hover:text-white transition-colors duration-200">Albums</a>
+                <a href="#tour" class="hover:text-white transition-colors duration-200">Tour</a>
+                <a href="#store" class="hover:text-white transition-colors duration-200">Store</a>
+                <a href="#newsletter" class="hover:text-white transition-colors duration-200">Newsletter</a>
+            </div>
+
+            <!-- Socials Quick Links -->
+            <div class="flex space-x-4 text-sm text-neutral-400">
+                <a href="#" class="hover:text-white transition-colors">SP</a>
+                <a href="#" class="hover:text-white transition-colors">AP</a>
+                <a href="#" class="hover:text-white transition-colors">IG</a>
+                <a href="#" class="hover:text-white transition-colors">YT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="h-screen flex flex-col justify-center items-center text-center px-6 relative pt-20">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0a0a0a] z-10"></div>
+        <!-- Minimal placeholder for artist press image / visual graphic -->
+        <div class="absolute inset-0 bg-neutral-900 opacity-40 flex items-center justify-center text-neutral-800 text-9xl font-bold tracking-tighter select-none">
+            ECHOES
+        </div>
+        
+        <div class="relative z-20 max-w-2xl">
+            <p class="text-xs tracking-[0.5em] uppercase text-neutral-400 mb-3">Latest Release</p>
+            <h1 class="text-5xl md:text-7xl font-light tracking-tight uppercase mb-6 text-white">Silence In The Dark</h1>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#albums" class="bg-white text-black px-8 py-3 text-xs tracking-widest uppercase font-semibold hover:bg-neutral-200 transition-colors duration-200">Listen Now</a>
+                <a href="#tour" class="border border-neutral-700 text-white px-8 py-3 text-xs tracking-widest uppercase font-semibold hover:bg-white hover:text-black hover:border-white transition-all duration-200">Tour Dates</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-5xl mx-auto px-6 space-y-32 pb-32">
+
+        <!-- Section: Albums -->
+        <section id="albums" class="scroll-mt-28">
+            <h2 class="text-xs tracking-[0.3em] uppercase text-neutral-500 mb-12 font-semibold">— Discography</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Album Vinyl/Cover Art Mock -->
+                <div class="bg-neutral-900 aspect-square w-full max-w-md mx-auto flex items-center justify-center border border-neutral-800 shadow-2xl relative group overflow-hidden">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-xs tracking-widest uppercase border border-white px-4 py-2">Stream</span>
+                    </div>
+                    <!-- Minimalist geometric "album art" -->
+                    <div class="w-32 h-32 border border-neutral-700 rounded-full flex items-center justify-center animate-[spin_20s_linear_infinite]">
+                        <div class="w-12 h-12 bg-neutral-800 rounded-full border border-neutral-600"></div>
+                    </div>
+                </div>
+
+                <!-- Tracklist & Info -->
+                <div>
+                    <span class="text-xs uppercase tracking-widest text-neutral-400">LP • 2026</span>
+                    <h3 class="text-3xl font-light uppercase mt-2 mb-6 tracking-wide">Silence In The Dark</h3>
+                    
+                    <div class="space-y-4 text-sm border-t border-neutral-900 pt-4">
+                        <div class="flex justify-between items-center py-2 border-b border-neutral-950 group">
+                            <span class="text-neutral-400 group-hover:text-white transition-colors">01. Overture</span>
+                            <span class="text-xs text-neutral-600">2:41</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-neutral-950 group">
+                            <span class="text-neutral-400 group-hover:text-white transition-colors">02. Neon Shadows</span>
+                            <span class="text-xs text-neutral-600">3:54</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-neutral-950 group">
+                            <span class="text-neutral-400 group-hover:text-white transition-colors">03. Static Pulse</span>
+                            <span class="text-xs text-neutral-600">4:12</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-neutral-950 group">
+                            <span class="text-neutral-400 group-hover:text-white transition-colors">04. Echo Location</span>
+                            <span class="text-xs text-neutral-600">3:18</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Tour -->
+        <section id="tour" class="scroll-mt-28">
+            <div class="flex justify-between items-end mb-12">
+                <h2 class="text-xs tracking-[0.3em] uppercase text-neutral-500 font-semibold">— Upcoming Live Dates</h2>
+                <span class="text-xs text-neutral-400 uppercase tracking-widest hidden sm:inline">World Tour 2026</span>
+            </div>
+
+            <div class="border-t border-neutral-900 divide-y divide-neutral-900">
+                <!-- Date Row 1 -->
+                <div class="py-6 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:bg-neutral-950/40 px-2 transition-colors duration-200">
+                    <div class="flex items-center space-x-6">
+                        <div class="text-xs tracking-widest text-neutral-500 uppercase font-mono">OCT 14</div>
+                        <div>
+                            <div class="text-base font-light tracking-wide">London, UK</div>
+                            <div class="text-xs text-neutral-500">O2 Academy Brixton</div>
+                        </div>
+                    </div>
+                    <a href="#" class="self-start md:self-auto text-xs tracking-widest uppercase border border-neutral-800 px-6 py-2.5 hover:bg-white hover:text-black hover:border-white transition-all duration-200">Tickets</a>
+                </div>
+                <!-- Date Row 2 -->
+                <div class="py-6 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:bg-neutral-950/40 px-2 transition-colors duration-200">
+                    <div class="flex items-center space-x-6">
+                        <div class="text-xs tracking-widest text-neutral-500 uppercase font-mono">OCT 18</div>
+                        <div>
+                            <div class="text-base font-light tracking-wide">Paris, FR</div>
+                            <div class="text-xs text-neutral-500">Le Zenith</div>
+                        </div>
+                    </div>
+                    <a href="#" class="self-start md:self-auto text-xs tracking-widest uppercase border border-neutral-800 px-6 py-2.5 hover:bg-white hover:text-black hover:border-white transition-all duration-200">Tickets</a>
+                </div>
+                <!-- Date Row 3 -->
+                <div class="py-6 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:bg-neutral-950/40 px-2 transition-colors duration-200">
+                    <div class="flex items-center space-x-6">
+                        <div class="text-xs tracking-widest text-neutral-500 uppercase font-mono">NOV 02</div>
+                        <div>
+                            <div class="text-base font-light tracking-wide">New York, NY</div>
+                            <div class="text-xs text-neutral-500">Terminal 5</div>
+                        </div>
+                    </div>
+                    <span class="self-start md:self-auto text-xs tracking-widest uppercase border border-neutral-900 text-neutral-600 px-6 py-2.5 cursor-not-allowed">Sold Out</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Store -->
+        <section id="store" class="scroll-mt-28">
+            <h2 class="text-xs tracking-[0.3em] uppercase text-neutral-500 mb-12 font-semibold">— Selected Merch</h2>
+            
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="group">
+                    <div class="bg-neutral-900 aspect-[3/4] w-full flex items-center justify-center border border-neutral-800 overflow-hidden relative mb-4">
+                        <!-- Placeholder for clean product mock -->
+                        <div class="w-24 h-32 bg-neutral-950 border border-neutral-800 rounded group-hover:scale-105 transition-transform duration-500 flex items-center justify-center text-neutral-800 font-bold">TEE</div>
+                    </div>
+                    <div class="flex justify-between items-start text-sm">
+                        <div>
+                            <h4 class="font-light tracking-wide uppercase text-neutral-200">01. Logo Heavyweight Tee</h4>
+                            <p class="text-xs text-neutral-500 mt-1">Vintage Black</p>
+                        </div>
+                        <span class="font-mono text-neutral-400">$45</span>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="group">
+                    <div class="bg-neutral-900 aspect-[3/4] w-full flex items-center justify-center border border-neutral-800 overflow-hidden relative mb-4">
+                        <div class="w-28 h-28 bg-neutral-950 rounded-full border border-neutral-800 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center text-neutral-800 font-bold">LP</div>
+                    </div>
+                    <div class="flex justify-between items-start text-sm">
+                        <div>
+                            <h4 class="font-light tracking-wide uppercase text-neutral-200">02. Silence In The Dark Vinyl</h4>
+                            <p class="text-xs text-neutral-500 mt-1">180g Gatefold LP</p>
+                        </div>
+                        <span class="font-mono text-neutral-400">$35</span>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="group">
+                    <div class="bg-neutral-900 aspect-[3/4] w-full flex items-center justify-center border border-neutral-800 overflow-hidden relative mb-4">
+                        <div class="w-24 h-32 bg-neutral-950 border border-neutral-800 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center text-neutral-800 font-bold">HOOD</div>
+                    </div>
+                    <div class="flex justify-between items-start text-sm">
+                        <div>
+                            <h4 class="font-light tracking-wide uppercase text-neutral-200">03. Oversized Pullover</h4>
+                            <p class="text-xs text-neutral-500 mt-1">Chcoal Grey</p>
+                        </div>
+                        <span class="font-mono text-neutral-400">$85</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Newsletter -->
+        <section id="newsletter" class="scroll-mt-28 max-w-xl mx-auto text-center py-12 border-y border-neutral-900">
+            <h2 class="text-xs tracking-[0.3em] uppercase text-neutral-500 mb-3 font-semibold">Mailing List</h2>
+            <p class="text-sm font-light text-neutral-400 mb-8 max-w-md mx-auto">Subscribe to receive priority access to tour tickets, upcoming vinyl pressings, and exclusive capsule drops.</p>
+            
+            <form id="newsletterForm" class="flex flex-col sm:flex-row gap-3 w-full">
+                <input 
+                    type="email" 
+                    placeholder="ENTER YOUR EMAIL ADDRESS" 
+                    required
+                    class="bg-neutral-950 border border-neutral-800 text-white placeholder-neutral-600 px-4 py-3 text-xs tracking-widest uppercase font-light focus:outline-none focus:border-neutral-400 flex-grow rounded-none transition-colors"
+                >
+                <button 
+                    type="submit" 
+                    class="bg-white text-black text-xs tracking-widest uppercase font-semibold px-8 py-3 hover:bg-neutral-200 transition-colors duration-200 rounded-none whitespace-nowrap"
+                >
+                    Subscribe
+                </button>
+            </form>
+            <div id="successMessage" class="hidden text-xs text-neutral-400 uppercase tracking-widest mt-4 animate-pulse">
+                Thank you. You have been added to the matrix.
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer / Socials Overview -->
+    <footer class="border-t border-neutral-900 bg-black/40 text-neutral-500 text-xs py-12">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex space-x-8 tracking-widest uppercase">
+                <a href="#" class="hover:text-white transition-colors">Spotify</a>
+                <a href="#" class="hover:text-white transition-colors">Apple Music</a>
+                <a href="#" class="hover:text-white transition-colors">Instagram</a>
+                <a href="#" class="hover:text-white transition-colors">YouTube</a>
+            </div>
+            <div class="font-light tracking-wide text-center md:text-right">
+                <p>&copy; 2026 ARTIST. ALL RIGHTS RESERVED.</p>
+                <p class="text-[10px] text-neutral-700 mt-1 uppercase tracking-widest">Designed in Monochrome</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Minimal Functional JS -->
+    <script>
+        // Smooth form submit feedback
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.style.display = 'none';
+            document.getElementById('successMessage').classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
